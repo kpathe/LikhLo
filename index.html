@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likh Lo</title>
+    <style>
+        #main-nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LikhLo Notes</h1>
+    </header>
+    <nav>
+        <ul id="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Favourite Notes</a> </li>
+            <li><a href="#">Private</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="note-title">
+            <p id="title">Note Title</p>
+        </div>
+
+        <div id="note-details">
+            <p>Written on {} Last Edited {} Author {}</p>
+        </div>
+
+        <div id="note-body">
+            <form action="">
+                <label for="note-body"></label>
+                <textarea name="note-body" id="" style="height: 50vh; width: 80vw;"></textarea>
+
+                <label for="submit"></label>
+                <button type="submit" name="submit" style="display: block;margin-bottom: 40px;">Add note</button>
+            </form>
+        </div>
+
+        <div id="notes-gallery">
+            Latests Notes
+            <div><a href="#">Notes</a></div>
+            <div><a href="#">Notes</a></div>
+            <div><a href="#">Notes</a></div>
+            <div><a href="#">Notes</a></div>
+        </div>
+    </main>
+</body>
+
+</html>
