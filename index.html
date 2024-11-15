@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,23 +19,26 @@
         }
     </style>
 </head>
-
 <body>
     <header>
         <h1>LikhLo Notes</h1>
     </header>
     <nav>
         <ul id="main-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Favourite Notes</a> </li>
+            <li id="home"><a href="#">Home</a></li>
+            <li><a href="#">Favourite Notes</a></li>
             <li><a href="#">Private</a></li>
             <li><a href="#">Settings</a></li>
         </ul>
     </nav>
 
     <main>
-        <div id="note-title">
-            <p id="title">Note Title</p>
+        <div>
+            <form action="">
+                <input id="note-title-input" type="text" placeholder="Enter title...">
+                <button id="note-title-button" type="submit">Add title</button>
+            </form>
+            <p id="note-title-text">Note Title</p>
         </div>
 
         <div id="note-details">
@@ -46,28 +48,27 @@
         <div id="note-body">
             <form action="">
                 <label for="note-body"></label>
-                <textarea name="note-body" id="" style="height: 50vh; width: 80vw;"></textarea>
+                <textarea name="note-body" id="note-data" style="height: 50vh; width: 80vw;" placeholder="Enter notes here..."></textarea>
 
                 <div class="buttons">
                     <label for="submit"></label>
-                    <button type="submit" name="submit">Add note</button>
+                    <button id="add-note" type="button" name="submit">Add note</button>
 
                     <label for="submit"></label>
                     <button type="reset" name="reset">Reset</button>
                 </div>
-
-
             </form>
         </div>
 
         <div id="notes-gallery">
             Latest Notes
-            <div><a href="#">Notes</a></div>
+            <div style="margin: 20px 0px;" id="first-note"><a href="#">Notes</a></div>
             <div><a href="#">Notes</a></div>
             <div><a href="#">Notes</a></div>
             <div><a href="#">Notes</a></div>
         </div>
     </main>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
